@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+}
+.branding-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.page-title {
+  color: gray;
+  font-size: 14px;
+  margin: 0 10px;
+  font-weight: 500;
+}
