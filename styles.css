@@ -5,22 +5,72 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Noto Sans", sans-serif;
 }
+
 .navbar {
   display: flex;
   flex-direction: row;
   border: 2px solid red;
+  padding: 0 70px;
 }
+
 .branding-section {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin: 40px 0;
+  flex-wrap: wrap;
 }
+
 .page-title {
   color: gray;
   font-size: 14px;
   margin: 0 10px;
   font-weight: 500;
+}
+
+.navigation-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 20px 0;
+  width: 100%;
+}
+.nav-btn-white {
+  padding: 6px;
+  background-color: #ffffff00;
+  border: 1px solid #adb2b8;
+  color: #65696c;
+}
+.nav-btn-green {
+  background-color: #8ec423;
+  padding: 8px 10px;
+  color: aliceblue;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+}
+.nav-btn-white, .nav-btn-green {
+  border-radius: 5px;
+  margin: 0 5px;
+}
+.links-section {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.nav-link {
+  text-decoration: none;
+  border: 1px solid transparent;
+  color: #676666;
+  font-weight: 500;
+  margin: 0 15px;
+}
+.nav-link:hover, .nav-link-active {
+  color:#9b41b2;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #9b41b2;
 }
