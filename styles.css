@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* border: 2px solid red; */
 }
 
 body {
@@ -13,7 +14,6 @@ body {
 .navbar {
   display: flex;
   flex-direction: row;
-  border: 2px solid red;
   padding: 0 70px;
 }
 
@@ -53,8 +53,15 @@ body {
   font-weight: 600;
   border: none;
 }
+.nav-btn-white:hover {
+  color: #9b41b2;
+  border-color: #9b41b2;
+}
+.nav-btn-green:hover {
+  background-color: #aedb55;
+}
 .nav-btn-white, .nav-btn-green {
-  border-radius: 5px;
+  border-radius: 3px;
   margin: 0 5px;
 }
 .links-section {
