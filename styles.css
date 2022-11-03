@@ -208,17 +208,20 @@ form>textarea,
   margin-bottom: 25px;
   width: 100%;
 }
+
 form>p.note {
   font-size: 12px;
   color: #414141;
   margin-bottom: 25px;
 }
+
 form>footer {
   border-top: 1px solid #c5c5c5;
   margin-top: 40px;
   padding-top: 30px;
   text-align: right;
 }
+
 form>footer>input[type="submit"] {
   background-color: #85bf11;
   color: white;
@@ -231,7 +234,31 @@ form>footer>input[type="submit"] {
   cursor: pointer;
 }
 
-
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 1px solid #c5c5c5;
+  padding-top: 30px;
+  margin: 30px 70px 70px 70px;
+}
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+.section-heading {
+  color: #696969;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.footer-link {
+  font-size: 15px;
+  text-decoration: none;
+  color: #9c9c9c;
+  margin-bottom: 2px;
+}
 
 
 @media (max-width: 1000px) {
