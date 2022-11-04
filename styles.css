@@ -9,7 +9,7 @@
 
 body {
   font-family: "Noto Sans", sans-serif;
-  transition: all 0.5s ease-out;
+  transition: all 0.3s ease-out;
   position: relative;
 }
 
@@ -17,10 +17,54 @@ main {
   margin: 50px 70px;
 }
 
+.nav-toggler {
+  vertical-align: middle;
+  color: purple;
+  font-size: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+
+.sidebar {
+  position: fixed;
+  right: -50%;
+  width: 50%;
+  height: 100vh;
+  background-color: darkviolet;
+  transition: all 0.3s ease-out;
+}
+
+.sidebar>ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar>ul>li {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.sidelink {
+  text-decoration: none;
+  color: #dbdbdb;
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+
+.sidelink-active {
+  font-weight: 700;
+  color: white;
+}
+
 .navbar {
   background-color: white;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   padding: 0 70px;
   position: sticky;
   top: 0;
@@ -80,14 +124,7 @@ main {
   border-radius: 3px;
   margin: 0 5px;
 }
-.nav-toggler {
-  vertical-align: middle;
-  color: purple;
-  font-size: 30px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
+
 .links-section {
   margin-top: 20px;
   display: flex;
@@ -250,24 +287,29 @@ form>footer>input[type="submit"] {
   justify-content: space-between;
   border-top: 1px solid #c5c5c5;
   padding-top: 30px;
-  margin: 30px 70px 70px 70px;
+  /* margin: 30px 70px 70px 70px; */
+  padding: 70px;
 }
+
 .footer-section {
   display: flex;
   flex-direction: column;
 }
+
 .section-heading {
   color: #696969;
   font-size: 15px;
   font-weight: 600;
   margin-bottom: 5px;
 }
+
 .footer-link {
   font-size: 15px;
   text-decoration: none;
   color: #9c9c9c;
   margin-bottom: 2px;
 }
+
 .footer-link:hover {
   color: #0275d8;
   text-decoration: underline;
@@ -275,20 +317,49 @@ form>footer>input[type="submit"] {
 
 
 @media (max-width: 1000px) {
+  .navbar {
+    background-color: #b956d183;
+    background-image: url("c2.png");
+  }
+
+  .nav-toggler {
+    display: inline;
+  }
+
+  .navbar>.navigation-section {
+    display: none;
+  }
+
   ul.breadcrumb {
     display: block;
+    margin-bottom: 20px;
   }
 
   .search-bar {
     float: none;
     width: 100%;
   }
+
+  .footer {
+    background-color: #414141;
+    color: wheat;
+  }
 }
+
 @media (max-width: 768px) {
   .navbar {
-    padding: 2px 2px;
+    padding: 2px 10px;
   }
+
+  main {
+    margin: 10px 20px;
+  }
+
   .section-heading {
     margin-top: 20px;
+  }
+
+  .footer {
+    flex-direction: column;
   }
 }
