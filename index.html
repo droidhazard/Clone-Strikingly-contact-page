@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body id="body">
   <!-- NAVBAR -->
   <nav class="navbar">
     <div class="branding-section">
@@ -24,6 +24,8 @@
         <button type="button" class="nav-btn-white">EN</button>
         <button class="nav-btn-white">SIGN IN</button>
         <button class="nav-btn-green">Create Your Free Website</button>
+        <button type="button" role="button" class="nav-toggler" onclick="toggleNav();">
+          <i class="bi bi-list"></i></button>
       </div>
       <div class="links-section">
         <a href="#" class="nav-link">Home</a>
@@ -102,6 +104,8 @@
       <a href="#" class="footer-link">Terms & Privacy</a>
     </div>
   </footer>
+
+  <script src="javascript.js"></script>
 </body>
 
 </html>

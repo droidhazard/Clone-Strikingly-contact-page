@@ -9,6 +9,8 @@
 
 body {
   font-family: "Noto Sans", sans-serif;
+  transition: all 0.5s ease-out;
+  position: relative;
 }
 
 main {
@@ -78,7 +80,14 @@ main {
   border-radius: 3px;
   margin: 0 5px;
 }
-
+.nav-toggler {
+  vertical-align: middle;
+  color: purple;
+  font-size: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
 .links-section {
   margin-top: 20px;
   display: flex;
@@ -259,6 +268,10 @@ form>footer>input[type="submit"] {
   color: #9c9c9c;
   margin-bottom: 2px;
 }
+.footer-link:hover {
+  color: #0275d8;
+  text-decoration: underline;
+}
 
 
 @media (max-width: 1000px) {
@@ -269,5 +282,13 @@ form>footer>input[type="submit"] {
   .search-bar {
     float: none;
     width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    padding: 2px 2px;
+  }
+  .section-heading {
+    margin-top: 20px;
   }
 }
